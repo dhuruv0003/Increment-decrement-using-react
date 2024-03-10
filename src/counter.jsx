@@ -11,8 +11,8 @@ export default function Counter(){
     return (
         <>
             <h1>Counter = {count}</h1>
-            <button onClick={handlecount}>increment</button>
-            <button onClick={handlecount2}>decrement</button>
+            <button onMouseOver={handlecount}>increment</button>
+            <button onMouseOver={handlecount2}>decrement</button>
         </>
 
 

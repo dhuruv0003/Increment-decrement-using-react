@@ -4,6 +4,7 @@ function App() {
    return (
     <>
       <Counter></Counter>
+      <Counter></Counter>
       <h1>Learning states</h1>
     </>
   )
