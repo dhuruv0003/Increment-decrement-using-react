@@ -3,14 +3,15 @@ import { useState } from "react";
 export default function Counter(){   
     let [count,updater]=useState(0);
 
-    console.log("render new count");
-    console.log(`count is ${count}`);
-    
+    // console.log("render new count");
+    // console.log(`count is ${count}`);
+
     function handlecount(){
         updater(count+1)
-        console.log(`inside count ${count}`);
+        // console.log(`inside count ${count}`);
     }
-    // whenever the updater function is called the whole page is re renderd agaain and again
+    // whenever the updater function is called the whole page is re renderd agaain and again.
+    //Real value update render hone ka baad hoti hai.
     function handlecount2(){
         updater(count-1)
     }
