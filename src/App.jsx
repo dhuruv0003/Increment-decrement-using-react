@@ -1,9 +1,8 @@
 import './App.css'
 import Counter from './counter'
 function App() {
-  return (
+   return (
     <>
-      <Counter></Counter>
       <Counter></Counter>
       <h1>Learning states</h1>
     </>
