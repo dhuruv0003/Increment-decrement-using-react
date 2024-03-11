@@ -2,19 +2,23 @@ import { useState } from "react";
 
 export default function Counter(){   
     let [count,updater]=useState(0);
+
+    console.log("render new count");
+    console.log(`count is ${count}`);
+    
     function handlecount(){
         updater(count+1)
+        console.log(`inside count ${count}`);
     }
+    // whenever the updater function is called the whole page is re renderd agaain and again
     function handlecount2(){
         updater(count-1)
     }
     return (
         <>
             <h1>Counter = {count}</h1>
-            <button onMouseOver={handlecount}>increment</button>
-            <button onMouseOver={handlecount2}>decrement</button>
+            <button onClick={handlecount}>increment</button>
+            <button onClick={handlecount2}>decrement</button>
         </>
-
-
     )
 }
