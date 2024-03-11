@@ -1,7 +1,7 @@
 import './App.css'
 import Counter from './counter'
 function App() {
-   return (
+  return (
     <>
       <Counter></Counter>
       <Counter></Counter>
