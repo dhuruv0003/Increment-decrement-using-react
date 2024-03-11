@@ -5,11 +5,11 @@ export default function Counter(){
 
     // console.log("render new count");
     // console.log(`count is ${count}`);
-
-    function handlecount(){
+    let handlecount=()=>{
         updater(count+1)
         // console.log(`inside count ${count}`);
     }
+    
     // whenever the updater function is called the whole page is re renderd agaain and again.
     //Real value update render hone ka baad hoti hai.
     function handlecount2(){
@@ -22,4 +22,5 @@ export default function Counter(){
             <button onClick={handlecount2}>decrement</button>
         </>
     )
+    
 }
